@@ -9,8 +9,8 @@ A simple command-line grocery list application demonstrating **Single Responsibi
 javac -cp "." -d "target/classes" src/main/java/com/grocery/*.java
 
 # Basic usage
-java -cp "target/classes" com.grocery.GroceryApp add "Bananas"
-java -cp "target/classes" com.grocery.GroceryApp add "Milk"
+java -cp "target/classes" com.grocery.GroceryApp add "Pineapple"
+java -cp "target/classes" com.grocery.GroceryApp add "Kiwi"
 java -cp "target/classes" com.grocery.GroceryApp list
 java -cp "target/classes" com.grocery.GroceryApp check 1
 java -cp "target/classes" com.grocery.GroceryApp remove 2
@@ -61,8 +61,8 @@ src/test/java/com/grocery/
 
 Items are saved to `grocery-list.json` in pipe-separated format:
 ```
-1|Bananas|false|2025-10-10T16:59:18
-2|Milk|true|2025-10-10T17:05:24
+1|Pineapple|false|2025-10-10T16:59:18
+2|Kiwi|true|2025-10-10T17:05:24
 ```
 
 The beauty of SOLID design: swap storage types without changing business logic!
