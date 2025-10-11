@@ -1,6 +1,6 @@
 package grocery;
 
-import grocery.models.Item; // ✅ FIXED
+import grocery.models.Item;
 import grocery.storage.Storage;
 
 import java.util.List;
@@ -57,3 +57,4 @@ public class App {
         storage.saveItems(updated);
     }
 }
+
