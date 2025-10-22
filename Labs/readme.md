@@ -30,8 +30,12 @@ The goal was to apply at least three of the SOLID principles in a practical exam
 ## Quick Start
 
 ```powershell
-# Create Program (class)
-(Path to Labs) javac -d target/classes (Get-ChildItem -Path .\com\gun -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+# Create Program FUNShop (class)
+javac -d target/classes (Get-ChildItem -Path .\com\gun -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+
+# Start the program
+java -cp target/classes gun.FUNShop
+
 
 ```
 # FUNShop Java Application
@@ -112,4 +116,5 @@ After that, you choose a payment method such as Credit Card or PayPal. Finally, 
 The process is smooth, modular, and easy to extend thanks to solid design principles.
 
 ![img_1.png](img_1.png)
+
 
